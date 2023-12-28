@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { StyleSheet, View, Text, TouchableOpacity } from 'react-native';
 
-function TouchableButton({ value, scale, opacity }) {
+export function UploadButton({scale, opacity}) {
   const [isPressed, setPressed] = useState(false);
 
   const buttonStyle = {
@@ -10,18 +10,16 @@ function TouchableButton({ value, scale, opacity }) {
   };
 
   return (
-    <TouchableOpacity activeOpacity={opacity} onPressIn={() => setPressed(true)}onPressOut={() => setPressed(false)}>
-      <View style={buttonStyle}>
-        <Text style={style.text}>{value}</Text>
-      </View>
-    </TouchableOpacity>
-  );
-}
-
-export function UploadButton() {
-  return (
     <View style={style.container}>
-      <TouchableButton value="Upload Image" scale=".95" opacity={0.9} />
+      <TouchableOpacity
+        activeOpacity={opacity}
+        onPressIn={() => setPressed(true)}
+        onPressOut={() => setPressed(false)}
+      >
+        <View style={buttonStyle}>
+          <Text style={style.text}>Upload Image</Text>
+        </View>
+      </TouchableOpacity>
     </View>
   );
 }
@@ -33,7 +31,6 @@ const style = StyleSheet.create({
     width: '50%',
   },
   button: {
-    transform: '',
     padding: 15,
     borderRadius: 15,
     backgroundColor: '#6750A4',
