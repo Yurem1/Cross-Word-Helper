@@ -10,11 +10,7 @@ function TouchableButton({ value, scale, opacity }) {
   };
 
   return (
-    <TouchableOpacity
-      activeOpacity={opacity}
-      onPressIn={() => setPressed(true)}
-      onPressOut={() => setPressed(false)}
-    >
+    <TouchableOpacity activeOpacity={opacity} onPressIn={() => setPressed(true)}onPressOut={() => setPressed(false)}>
       <View style={buttonStyle}>
         <Text style={style.text}>{value}</Text>
       </View>
@@ -25,7 +21,7 @@ function TouchableButton({ value, scale, opacity }) {
 export function UploadButton() {
   return (
     <View style={style.container}>
-      <TouchableButton value="Upload Image" scale=".9" opacity={0.8} />
+      <TouchableButton value="Upload Image" scale=".95" opacity={0.9} />
     </View>
   );
 }
