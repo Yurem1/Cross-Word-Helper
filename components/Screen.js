@@ -3,7 +3,7 @@ import { StyleSheet, View, Image } from 'react-native';
 
 import CrossWordSgv from '../assets/Cross-Word-Helper-Logo.png';
 
-export function DisplayLogo() {
+export default function DisplayLogo() {
     return (
       <View style={style.container}>
         <Image source={CrossWordSgv}/>
@@ -13,7 +13,8 @@ export function DisplayLogo() {
 
 const style = StyleSheet.create({
   container: {
-    margin: 50,
+    flex: 1,
+    marginTop: 20
   }
 });
 
