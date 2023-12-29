@@ -1,42 +1,49 @@
 import React, { useState } from 'react';
 import { StyleSheet, View, Text, TouchableOpacity } from 'react-native';
 
-export function UploadButton({scale, opacity}) {
+export default function UploadButton() {
   const [isPressed, setPressed] = useState(false);
 
   const buttonStyle = {
-    ...style.button,
-    transform: isPressed ? `scale(${scale})` : 'scale(1)',
+    ...styles.button,
+    transform: isPressed ? `scale(.95)` : 'scale(1)',
+    backgroundColor: isPressed ? '#625B71' : '#6750A4',
+    borderColor: isPressed ? 'black' : '',
+    borderWidth: isPressed ? '1' : '2'
   };
 
   return (
-    <View style={style.container}>
+    <View style={styles.container}>
       <TouchableOpacity
-        activeOpacity={opacity}
+        activeOpacity={.9}
         onPressIn={() => setPressed(true)}
         onPressOut={() => setPressed(false)}
       >
         <View style={buttonStyle}>
-          <Text style={style.text}>Upload Image</Text>
+          <Text style={styles.text}>Upload Image</Text>
         </View>
       </TouchableOpacity>
     </View>
   );
 }
 
-const style = StyleSheet.create({
+const styles = StyleSheet.create({
   container: {
     padding: 0,
-    margin: 10,
-    width: '50%',
+    flex: 1,
+    width: '60%',
   },
   button: {
-    padding: 15,
-    borderRadius: 15,
+    marginTop: 90,
+    padding: 30,
+    borderRadius: 30,
     backgroundColor: '#6750A4',
+    borderWidth: '2',
+    borderColor: ''
   },
   text: {
     textAlign: 'center',
+    fontSize: 20,
     fontWeight: 'bold',
     color: 'white',
   },
