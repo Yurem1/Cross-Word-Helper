@@ -2,7 +2,7 @@ import React, { useEffect, useState, } from "react";
 import { StyleSheet, Text, View } from 'react-native';
 import { useFonts as ExpoUseFonts } from 'expo-font';
 
-import useFontClass from '../components/hooks/useFonts'
+import useFontClass from '../hooks/useFonts'
 
 export default function Title() {
     const isFontLoaded = useFontClass.useFonts({
