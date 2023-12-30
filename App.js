@@ -1,7 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 
-import { Title } from './components/Title';
+import Title from './components/Title';
 import UploadButton from './components/Button';
 import DisplayLogo from './components/Screen';
 
