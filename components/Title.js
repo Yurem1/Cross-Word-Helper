@@ -1,23 +1,22 @@
-import React, { useState } from "react";
+import React, { useEffect, useState, } from "react";
 import { StyleSheet, Text, View } from 'react-native';
-import { useFonts } from 'expo-font';
+import { useFonts as ExpoUseFonts } from 'expo-font';
 
-export function Title() {
-    [isLoaded] = useFonts({
-        'Rubik-Doodle-Shadow-Regular': require('../assets/fonts/Rubik-Doodle-Shadow-Regular.ttf'),
-        'RubikScribble-Regular': require('../assets/fonts/RubikScribble-Regular.ttf')
+import useFontClass from '../components/hooks/useFonts'
+
+export default function Title() {
+    const isFontLoaded = useFontClass.useFonts({
+        'Rubik-Doodle-Shadow-Regular': require('../assets/fonts/Rubik-Doodle-Shadow-Regular.ttf')
     });
-
-    if(!isLoaded) {
-        return <Text>Loading Text...</Text>
+    
+    if(isFontLoaded) {
+        return (
+            <View style={styles.container}>
+                <Text style={styles.title}>Cross Word Helper</Text>
+                <Text style={styles.description}>Press the button and upload your image for scanning</Text>
+            </View>
+        );
     }
-
-    return (
-        <View style={styles.container}>
-            <Text style={styles.title}>Cross Word Helper</Text>
-            <Text style={styles.description}>Press the button and upload your image for scanning</Text>
-        </View>
-    );
 }
 
 const styles = StyleSheet.create({
@@ -36,6 +35,6 @@ const styles = StyleSheet.create({
         color: '#381E72',
         textAlign: 'center',
         fontSize: 15,
-        fontWeight: '300'
+        fontWeight: 'bold',
     }
 });
