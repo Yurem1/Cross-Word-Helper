@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { StyleSheet, View, Text, TouchableOpacity } from 'react-native';
+import Camera from '../hooks/useCamera';
 
 export default function UploadButton() {
   const [isPressed, setPressed] = useState(false);
@@ -8,7 +9,6 @@ export default function UploadButton() {
     ...styles.button,
     transform: isPressed ? `scale(.95)` : 'scale(1)',
     backgroundColor: isPressed ? '#625B71' : '#6750A4',
-    borderColor: isPressed ? 'black' : '',
     borderWidth: isPressed ? '1' : '2'
   };
 
@@ -18,6 +18,7 @@ export default function UploadButton() {
         activeOpacity={.9}
         onPressIn={() => setPressed(true)}
         onPressOut={() => setPressed(false)}
+        onPress={Camera.useCamera()}
       >
         <View style={buttonStyle}>
           <Text style={styles.text}>Upload Image</Text>
@@ -32,6 +33,7 @@ const styles = StyleSheet.create({
     padding: 0,
     flex: 1,
     width: '60%',
+    shadowOpacity: 10
   },
   button: {
     marginTop: 90,
