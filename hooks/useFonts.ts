@@ -30,7 +30,7 @@ export default class useFontClass extends ExpoFont {
    * @returns {boolean} a `boolean` indicating that a font has loaded or not 
    */
   static useFonts(fontSource: FontMap): boolean {
-    const [canReturn, setReturn] = useState(false);
+    const [canReturn, setReturn] = useState<boolean>(false);
 
     const [isLoaded] = ExpoFont.ExpoUseFont(fontSource);
 
