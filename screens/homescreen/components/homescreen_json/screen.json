@@ -1,0 +1,11 @@
+{
+    "homescreen": {
+        "screen": {
+            "title": "Stuck with an assigment?",
+            "description": "Find the answers for your troubles!"
+        },
+        "information": {
+            "title": " - Tap Here for more information"
+        }
+    }
+}
