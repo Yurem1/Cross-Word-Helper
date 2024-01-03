@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { StyleSheet, View, Image, Text } from 'react-native';
 
-import ScreenText from '../components/homescreen_json/screen.json';
+import ScreenText from '../text/screen.json';
 
 export default function Screen(): React.JSX.Element {
     return (
@@ -13,7 +13,7 @@ export default function Screen(): React.JSX.Element {
         </View>
         <View>
           <Text style={styles.text_description}>
-            {ScreenText.homescreen.screen.description}
+            {ScreenText.homescreen.screen.desc}
           </Text>
         </View>
       </View>
@@ -31,12 +31,12 @@ const styles = StyleSheet.create({
   },
   text_title: {
     fontSize: 20,
-    fontWeight: '300',
+    fontWeight: '400',
     textAlign: 'center'
   },
   text_description: {
     fontSize: 10,
-    fontWeight: '300',
+    fontWeight: '400',
     textAlign: 'center'
   }
 });
