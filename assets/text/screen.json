@@ -1,0 +1,15 @@
+{
+  "screen": {
+    "title": "Stuck with an assignment?",
+    "desc": "Find answers for your troubles!"
+  },
+  "info": {
+    "title": "Tap for more info",
+    "steps": {
+      "step_one": "You must have camera permissions enabled",
+      "step_two": "Upload an image or take a photo",
+      "step_three": "Wait for image processing",
+      "step_four": "Enjoy!"
+    }
+  }
+}
