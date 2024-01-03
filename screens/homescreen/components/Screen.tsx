@@ -1,19 +1,19 @@
 import React, { useState } from 'react';
 import { StyleSheet, View, Image, Text } from 'react-native';
 
-import ScreenText from '../text/screen.json';
+import ScreenText from '../../../assets/text/screen.json';
 
 export default function Screen(): React.JSX.Element {
     return (
       <View style={styles.container}>
         <View style={styles.title_container}>
           <Text style={styles.text_title}>
-            {ScreenText.homescreen.screen.title}
+            {ScreenText.screen.title}
           </Text>
         </View>
         <View>
           <Text style={styles.text_description}>
-            {ScreenText.homescreen.screen.desc}
+            {ScreenText.screen.desc}
           </Text>
         </View>
       </View>
