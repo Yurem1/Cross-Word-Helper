@@ -5,10 +5,6 @@ import ButtonPress from '../../../main_components/ButtonPress';
 import InfoText from '../../../assets/text/screen.json';
 import MoreInformation from '../components/MoreInformation'
 
-interface ToggleInformation {
-  onPress: boolean
-}
-
 export default function Information(): React.JSX.Element {
   const [infoFlags, setInfoFlags]: any = useState<boolean>(false)
   const [pressFlags,setPressFlags]: any = useState<boolean>(false)
