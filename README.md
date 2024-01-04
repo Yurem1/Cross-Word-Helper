@@ -9,7 +9,7 @@
 ## Introduction 
 As a High School student, many teachers love to assign students crossword puzzles, which can be very overwhelming and sometimes very difficult to finish, so I came up with a solution. You can have more time for other activities with this tool, whether it is a more important assignment at class, or you just wanna spend time with your phone, you won't have to worry about puzzles no more.
 ## Contributing
-I am open to contributions, if you have any suggestions or ideas, feel free to open an [issue](https://github.com/Yurem1/Cross-Word-Helper/issues) after you have read the contribution [guidelines.](https://github.com/Yurem1/Cross-Word-Helper/blob/main/CODE_OF_CONDUCT.md)
+I am open to contributions, if you have any suggestions or ideas, feel free to open an [issue](https://github.com/Yurem1/Cross-Word-Helper/issues) after you have read the contribution [guidelines](https://github.com/Yurem1/Cross-Word-Helper/blob/main/CODE_OF_CONDUCT.md).
 ## In Development 
 This project is currently in development, any updates will be shown in this repository.
 ## *Credits*
