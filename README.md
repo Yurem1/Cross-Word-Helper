@@ -11,7 +11,7 @@ As a High School student, many teachers love to assign students crossword puzzle
 ## Contributing
 I am open to contributions, if you have any suggestions or ideas, feel free to open an [issue](https://github.com/Yurem1/Cross-Word-Helper/issues) after you have read the contribution [guidelines.](https://github.com/Yurem1/Cross-Word-Helper/blob/main/CODE_OF_CONDUCT.md)
 ## In Development 
-This project is currently in development
+This project is currently in development, any updates will be shown in this repository.
 ## *Credits*
-*My Engineering teacher*, *who inspired me to go this far to build this project and look foward towards my goals.* \n 
-*My Computer Science Teacher, who inspired me to look beyond my limits and learn as much as I can.*
+  *My Engineering teacher*, *who inspired me to go this far to build this project and look foward towards my goals.*
+  *My Computer Science Teacher, who inspired me to look beyond my limits and learn as much as I can.*
