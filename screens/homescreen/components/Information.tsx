@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { StyleSheet, View, Text } from 'react-native';
 import { FontAwesome5 } from '@expo/vector-icons';
-
 import ButtonPress from '../../../main_components/ButtonPress';
 import InfoText from '../../../assets/text/screen.json';
 import MoreInformation from '../components/MoreInformation'
