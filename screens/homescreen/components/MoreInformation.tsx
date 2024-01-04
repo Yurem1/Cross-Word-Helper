@@ -9,10 +9,7 @@ interface ToggleInformation {
 }
 
 export default function MoreInformation({onPress}: ToggleInformation): React.JSX.Element {
-    const [
-      isPressed,
-      setPressed
-    ]: any = useState<boolean>(false);
+    const [isPressed, setPressed]: any = useState<boolean>(false);
   
     const dynamicStyle: any = {
       ...styles.information,
