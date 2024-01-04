@@ -13,5 +13,5 @@ I am open to contributions, if you have any suggestions or ideas, feel free to o
 ## In Development 
 This project is currently in development
 ## *Credits*
-*My Engineering teacher*, *who inspired me to go this far to build this project and look foward towards my goals.*
+*My Engineering teacher*, *who inspired me to go this far to build this project and look foward towards my goals.* \n 
 *My Computer Science Teacher, who inspired me to look beyond my limits and learn as much as I can.*
