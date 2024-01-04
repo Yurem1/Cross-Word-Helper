@@ -1,10 +1,10 @@
 import React from 'react';
-
+import { FontAwesome5 } from '@expo/vector-icons';
 /**
  * @summary Blueprint for expo-icons
  */
 interface ToggleIcon {
-    Type: ({
+    Type?: ({
       name,
       color,
       size
@@ -23,7 +23,7 @@ interface ToggleIcon {
  * `size` size of the icon
  * @returns An icon
  */
-export default function FetchIcon({Type, name, color = 'black', size = 15}: ToggleIcon): React.JSX.Element {
+export default function FetchIcon({Type = FontAwesome5, name, color = 'black', size = 15}: ToggleIcon): React.JSX.Element {
     return (
       <>
       <Type name={name} color={color} size={size}></Type>
