@@ -35,7 +35,7 @@ export default function Information(): React.JSX.Element {
 
 const styles: any = StyleSheet.create({
   container: {
-    flex: 1,
+    flex: 0,
     position: 'relative',
     top: 20,
   },
