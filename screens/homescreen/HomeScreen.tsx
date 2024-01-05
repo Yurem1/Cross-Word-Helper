@@ -1,14 +1,16 @@
 import * as React from 'react';
 import { StyleSheet, View, Text, TouchableOpacity } from 'react-native';
 
-import Screen from './components/Screen';
+import Description from './components/Description';
 import Information from './components/Information';
+import LowerScreen from './components/LowerScreen';
 
 export default function HomeScreen(): any {
     return (
         <View style={styles.container}>
-            <Screen></Screen>
+            <Description></Description>
             <Information></Information>
+            <LowerScreen></LowerScreen>
         </View>
     );
 };
