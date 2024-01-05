@@ -17,7 +17,7 @@ export default function MoreInformation({onPress}: ToggleInformation): React.JSX
     }
   
     return onPress && (
-      <View style={{top:10}}>
+      <View style={styles.container}>
         <ButtonPress opacity={.9} flags={setPressed}>
           <View style={dynamicStyle}>
             <Text style={styles.text_title}>
@@ -39,22 +39,26 @@ export default function MoreInformation({onPress}: ToggleInformation): React.JSX
 };
 
 const styles: any = StyleSheet.create({
-    information: {
-        padding: 10,
-        borderRadius: 25,
-        shadowOffset: { width: 0, height: 1},
-        shadowOpacity: 0.8,
-        shadowRadius: 1,
-        shadowColor: 'black',
-        backgroundColor: '#FFFFFF',
-    },
-    text_title: {
-        textAlign: 'center',
-        fontWeight: '500',
-    },
-    text_normal: {
-        textAlign: 'center',
-        fontWeight: '500',
-        marginTop: 5
-    }
+  container: {
+    flex: 0,
+    top: 10,
+  },
+  information: {
+    padding: 10,
+    borderRadius: 25,
+    shadowOffset: { width: 0, height: 1},
+    shadowOpacity: 0.8,
+    shadowRadius: 1,
+    shadowColor: 'black',
+    backgroundColor: '#FFFFFF',
+  },
+  text_title: {
+    textAlign: 'center',
+    fontWeight: '500',
+  },
+  text_normal: {
+    textAlign: 'center',
+    fontWeight: '500',
+    marginTop: 5
+  }
 });
