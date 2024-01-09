@@ -1,16 +1,22 @@
 import * as React from 'react';
-import { StyleSheet, View, Text, TouchableOpacity } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 
+import NavBar from '../../main_components/NavBar';
 import Description from './components/Description';
 import Information from './components/Information';
-import LowerScreen from './components/LowerScreen';
 
+/**
+ * @summary 
+ * This component should only be used within App.js
+ * @param param0 Navigation prop
+ * @returns The home screen, and everything related to it.
+ */
 export default function HomeScreen({navigation}): any {
     return (
         <View style={styles.container}>
             <Description></Description>
             <Information></Information>
-            <LowerScreen navigation={navigation}></LowerScreen>
+            <NavBar navigation={navigation}></NavBar>
         </View>
     );
 };
