@@ -4,7 +4,7 @@ import FetchIcon from './FetchIcon';
 
 /**
  * @summary The App Navigation Bar, contains buttons for all screens
- * @param param0 The navigation prop required for switching screens
+ * @param navigation The navigation prop required for switching screens
  * @returns A navigation bar element
  */
 export default function NavBar({navigation}): React.JSX.Element {

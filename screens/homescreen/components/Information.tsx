@@ -5,6 +5,10 @@ import ButtonPress from '../../../main_components/ButtonPress';
 import InfoText from '../../../assets/text/screen.json';
 import MoreInformation from '../components/MoreInformation'
 
+/**
+ * @summary A button that displays instructions and information regarding the app
+ * @returns A touchable element with opacity
+ */
 export default function Information(): React.JSX.Element {
   const [infoFlags, setInfoFlags] = useState<boolean>(false)
   const [pressFlags, setPressFlags] = useState<boolean>(false)
@@ -31,6 +35,9 @@ export default function Information(): React.JSX.Element {
   );
 };
 
+/**
+ * @summary styles for Information component
+ */
 const styles = StyleSheet.create({
   container: {
     position: 'relative',
