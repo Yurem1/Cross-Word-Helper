@@ -1,10 +1,13 @@
 import React from 'react';
-import { View, Text, StyleSheet, Button, TouchableOpacity } from 'react-native';
-import FetchIcon from '../../../main_components/FetchIcon';
-import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
+import FetchIcon from './FetchIcon';
 
-export default function LowerScreen({navigation}): React.JSX.Element {
+/**
+ * @summary The App Navigation Bar, contains buttons for all screens
+ * @param param0 The navigation prop required for switching screens
+ * @returns A navigation bar element
+ */
+export default function NavBar({navigation}): React.JSX.Element {
     const navigateHome = (): void => {
         navigation.navigate('Home');
     }
@@ -18,14 +21,14 @@ export default function LowerScreen({navigation}): React.JSX.Element {
             <View style={styles.home_button}>
                 <TouchableOpacity onPress={navigateHome}>
                     <Text style={styles.text}>
-                        <FetchIcon name='camera'/> Home
+                        <FetchIcon name='home' color='white'/> Home
                     </Text>
                 </TouchableOpacity>
             </View>
             <View style={styles.camera_button}>
                 <TouchableOpacity onPress={navigateCamera}>
                     <Text style={styles.text}>
-                        <FetchIcon name='home'/> Camera
+                        <FetchIcon name='camera' color='white'/> Camera
                     </Text>
                 </TouchableOpacity>
             </View>
@@ -33,6 +36,10 @@ export default function LowerScreen({navigation}): React.JSX.Element {
     );
 }
 
+/**
+ * @summary These styles are customized to always position the element at the bottom of the screen,
+ *  regarless of the positioning of any element within the `<View>` element, etc
+ */
 const styles: any = StyleSheet.create({
     container: {
         bottom: 0,
@@ -44,7 +51,7 @@ const styles: any = StyleSheet.create({
         justifyContent: 'space-between'
     },
     text: {
-        color: 'black',
+        color: 'white',
         fontSize: 15,
         fontWeight: '500'
     }
