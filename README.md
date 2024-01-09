@@ -4,7 +4,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-red.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
 
-# Cross Word Helper
+# Word Search Helper
 ###  *The app that **solves** your problems.* 
 ## Introduction 
 As a High School student, many teachers love to assign students crossword puzzles, which can be very overwhelming and sometimes very difficult to finish, so I came up with a solution. You can have more time for other activities with this tool, whether it is a more important assignment at class, or you just wanna spend time with your phone, you won't have to worry about puzzles no more.
