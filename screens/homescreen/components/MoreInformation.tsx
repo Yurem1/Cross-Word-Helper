@@ -38,7 +38,7 @@ export default function MoreInformation({onPress}: ToggleInformation): React.JSX
       );
 };
 
-const styles: any = StyleSheet.create({
+const styles = StyleSheet.create({
   container: {
     flex: 0,
     top: 10,
