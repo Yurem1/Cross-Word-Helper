@@ -33,7 +33,7 @@ export default function Information(): React.JSX.Element {
   );
 };
 
-const styles: any = StyleSheet.create({
+const styles = StyleSheet.create({
   container: {
     flex: 0,
     position: 'relative',
