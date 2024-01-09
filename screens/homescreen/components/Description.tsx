@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { StyleSheet, View, Image, Text } from 'react-native';
+import React from 'react';
+import { StyleSheet, View, Text } from 'react-native';
 
 import ScreenText from '../../../assets/text/screen.json';
 
