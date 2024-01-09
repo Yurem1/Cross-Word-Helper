@@ -6,14 +6,12 @@ import InfoText from '../../../assets/text/screen.json';
 import MoreInformation from '../components/MoreInformation'
 
 export default function Information(): React.JSX.Element {
-  const [infoFlags, setInfoFlags]: any = useState<boolean>(false)
-  const [pressFlags,setPressFlags]: any = useState<boolean>(false)
+  const [infoFlags, setInfoFlags] = useState<boolean>(false)
+  const [pressFlags, setPressFlags] = useState<boolean>(false)
 
-  const onPress = (): void => {
-    return infoFlags ? setInfoFlags(false) : setInfoFlags(true)
-  }
+  const onPress = (): void => infoFlags ? setInfoFlags(false) : setInfoFlags(true);
   
-  const dynamicStyle: any = {
+  const dynamicStyle = {
     ...styles.information,
     transform: pressFlags ? 'scale(.95)' : 'scale(1)'
   }
@@ -35,7 +33,6 @@ export default function Information(): React.JSX.Element {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 0,
     position: 'relative',
     top: 20,
   },
