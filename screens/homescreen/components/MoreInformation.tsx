@@ -4,10 +4,20 @@ import ButtonPress from '../../../main_components/ButtonPress';
 import FetchIcon from '../../../main_components/FetchIcon';
 import InfoText from '../../../assets/text/screen.json';
 
+/**
+ * @summary A blueprint for components that require flags to be displayed
+ */
 interface ToggleInformation {
     onPress: boolean;
 }
 
+/**
+ * @summary A component that gets rendered when the parameter `onPress` is true.
+ * This should only be used within Information.tsx or any component that requires it.
+ * Do not use inside a screen component.
+ * @param onPress a boolean flag
+ * @returns More information, if clicked
+ */
 export default function MoreInformation({onPress}: ToggleInformation): React.JSX.Element {
     const [isPressed, setPressed]: any = useState<boolean>(false);
   
@@ -38,9 +48,11 @@ export default function MoreInformation({onPress}: ToggleInformation): React.JSX
       );
 };
 
+/**
+ * @summary MoreInformation stylesheet
+ */
 const styles = StyleSheet.create({
   container: {
-    flex: 0,
     top: 10,
   },
   information: {

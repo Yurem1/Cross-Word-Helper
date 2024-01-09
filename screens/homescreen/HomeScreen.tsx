@@ -8,10 +8,10 @@ import Information from './components/Information';
 /**
  * @summary 
  * This component should only be used within App.js
- * @param param0 Navigation prop
+ * @param navigation Navigation prop
  * @returns The home screen, and everything related to it.
  */
-export default function HomeScreen({navigation}): any {
+export default function HomeScreen({navigation}): React.JSX.Element {
     return (
         <View style={styles.container}>
             <Description></Description>
@@ -21,6 +21,10 @@ export default function HomeScreen({navigation}): any {
     );
 };
 
+/**
+ * @summary
+ * Material 3 design, tertiary colors.
+ */
 const styles: any = StyleSheet.create({
     container: {
         flex: 1,
