@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { StyleSheet, View, Image, Text } from 'react-native';
 
-export default function Test(): any {
+import NavBar from '../../main_components/NavBar';
+
+export default function Test({navigation}): React.JSX.Element {
     return (
-        <Text>
-            Hi
-        </Text>
+        <NavBar navigation={navigation}></NavBar>
     )
 }
